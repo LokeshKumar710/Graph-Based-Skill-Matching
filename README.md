@@ -18,36 +18,8 @@ A sophisticated graph-based system for matching candidates to job roles based on
 pip install -r requirements.txt
 ```
 
-## Usage
 
-```python
-from skill_matcher import SkillMatcher
 
-# Initialize the skill matcher
-matcher = SkillMatcher()
-
-# Add candidates with their skills and experience
-matcher.add_candidate("candidate1", {
-    "Python": 8,
-    "Machine Learning": 5,
-    "Data Analysis": 6
-})
-
-# Set skill similarities
-matcher.set_skill_similarity("Python", "R", 0.8)
-
-# Define required skills for a role
-required_skills = {
-    "Python": 5,
-    "Machine Learning": 3
-}
-
-# Find matching candidates
-matches = matcher.find_matching_candidates(required_skills)
-
-# Visualize the graph
-matcher.visualize_graph("skill_graph.png")
-```
 
 ## How It Works
 
